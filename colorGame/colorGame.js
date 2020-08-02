@@ -9,8 +9,7 @@ var colorDisplay = document.getElementById("colorDisplay");
 var message = document.querySelector("#message");
 var h1 = document.querySelector("h1");
 var reset = document.getElementById("reset");
-// var easyBtn = document.getElementById("");
-// var hardBtn = document.getElementById("");
+
 var gameModes = document.querySelectorAll(".gameMode")
 
 gameModes[1].classList.remove("selected");
@@ -53,33 +52,7 @@ function resetSub(){
     h1.style.backgroundColor="steeleblue";
 }
 
-// easyBtn.addEventListener("click",function(){
-//     easyBtn.classList.add("selected");
-//     hardBtn.classList.remove("selected")
-//     numberOfSquares = 3;
-//     colors.generateRandomColors(numberOfSquares);
-//     pickedColor = pickedColors();
-//     colorDisplay.textContent = pickedColor;
-//     for(var i=0;i<squares.length;i++){
-//         if(colors[i]){
-//             squares[i].backgroundColor.colors[i];
-//         }else{
-//             squares[i].style.display = "none";
-//         }
-//     }
-// })
-// hardBtn.addEventListener("click",function(){
-//     easyBtn.classList.remove("selected");
-//     hardBtn.classList.add("selected")
-//     numberOfSquares = 6;
-//     colors.generateRandomColors(numberOfSquares);
-//     pickedColor = pickedColors();
-//     colorDisplay.textContent = pickedColor;
-//     for(var i=0;i<squares.length;i++){
-//         squares[i].backgroundColor.colors[i];
-//         squares[i].style.display = "block";
-//     }
-// })
+
 
 reset.addEventListener("click",function(){
     resetSub();
