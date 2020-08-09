@@ -1,0 +1,77 @@
+body{
+    background: #7b4397;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #dc2430, #7b4397);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #dc2430, #7b4397); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    font-family: 'Ubuntu', sans-serif;
+}
+div{
+    background-color: white;
+    width: 360px;
+    margin: 100px auto;
+    border-width: 2px;
+    box-shadow: 4px 5px 10px rgba(0,0,0,0.5);
+}
+
+h1{
+    font-size: 25px;
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
+input{
+    font-size: 20px;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #f7f7f7;
+    border: none;
+    color: rgb(0, 0, 0);
+}
+input:focus{
+    background-color: #d8468a;
+    border:none;
+    color: white;
+    outline: none; /*border froom the browser*/
+    border: 3px solid rgba(0,0,0,0);
+}
+ul{
+    list-style: none;/* removes the bullet points*/
+    margin: 0;
+    padding: 0;
+}
+li{
+    background-color: #fff;
+    height: 40px;
+    line-height: 40px;
+}
+li:nth-child(2n){
+    background-color: #f7f7f7;
+}
+.check{
+    color:grey;
+    text-decoration: line-through;
+}
+
+.fa-plus{
+    float: right;
+}
+
+span{
+    background-color: red;
+    margin-right: 20px;
+    height: 40px;
+    display: inline-block;
+    width: 0px;
+    color: white;
+    text-align: center;
+    opacity: 0;
+}
+
+li:hover span{
+    width: 40px;
+    transition:0.25s linear;
+    opacity: 1.0;
+}
